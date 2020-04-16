@@ -1,0 +1,144 @@
+.header {
+  background-color: #1b2d37;
+  background-image: url("../../img/promo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/promo-bg-2x.png");
+  }
+}
+
+.header__wrap {
+  display: flex;
+  box-sizing: border-box;
+  max-width: $container-lg;
+  padding: 33px 16px 33px 10px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  display: block;
+  width: 202px;
+  height: 52px;
+  margin-right: auto;
+}
+
+.header__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+  max-width: 350px;
+  margin-left: 81px;
+}
+
+.header__contact-link {
+  display: block;
+  padding: 2px 0;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 0 50%;
+  font-family: $pt-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+
+  &--email {
+    background-image: url("../../img/icon-email.svg");
+  }
+
+  &--phone {
+    background-image: url("../../img/icon-phone.svg");
+    background-position: 5px 50%;
+  }
+}
+
+.header__call {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  max-width: 300px;
+}
+
+.header__contact-link,
+.header__call-btn {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+
+@media (max-width: $screen-lg) {
+  .header {
+    background-image: url("../../img/promo-bg-tablet.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/promo-bg-tablet-2x.png");
+    }
+  }
+
+  .header__wrap {
+    display: flex;
+    box-sizing: border-box;
+    max-width: $container-lg;
+    padding: 19px 4px 19px 21px;
+    margin: 0 auto;
+  }
+
+  .header__contact {
+    margin-left: 32px;
+  }
+
+  .header__contact-link {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    font-size: 0;
+    background-size: 26px 26px;
+
+    &--phone {
+      background-position: center;
+    }
+  }
+
+  .header__call {
+    display: none;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .header {
+    background-image: url("../../img/promo-bg-mobile.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/promo-bg-mobile-2x.png");
+    }
+  }
+
+  .header__wrap {
+    padding: 16px 14px 16px 17px;
+  }
+
+  .header__logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header__contact {
+    margin-left: 22px;
+  }
+}

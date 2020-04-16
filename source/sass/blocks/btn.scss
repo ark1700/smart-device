@@ -1,0 +1,25 @@
+.btn {
+  padding: 12px 26px 10px;
+  border-radius: 5px;
+  background-color: #00b2ff;
+  border: 1px solid #00b2ff;
+  font-family: $roboto-condensed;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+
+  &--white {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+
+  &--blue {
+    background: transparent;
+    border: 1px solid #00b2ff;
+    color: #00b2ff;
+  }
+}

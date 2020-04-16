@@ -1,3 +1,16 @@
-h1 {
-  color: red;
+@import "./normalize.scss";
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/header.scss";
+@import "./blocks/promo.scss";
+
+body {
+  min-height: 100vh;
+  font-family: $pt-mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
 }

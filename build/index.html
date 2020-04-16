@@ -5,9 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <header class="header">
+    <div class="header__wrap">
+      <a class="header__logo">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mobile.webp 1x, img/logo-mobile-2x.webp 2x">
+          <source type="image/webp" srcset="img/logo.webp 1x, img/logo-2x.webp 2x">
+
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.jpg 1x, img/logo-mobile-2x.jpg 2x">
+          <img src="img/logo.png" srcset="img/logo-2x.png 2x" alt="Логотип" width="202" height="52">
+        </picture>
+      </a>
+      <div class="header__contact">
+        <a href="mailto:info@sd.ru" class="header__contact-link header__contact-link--email">info@sd.ru</a>
+      </div>
+      <div class="header__contact">
+        <a href="tel:+74950005252" class="header__contact-link header__contact-link--phone">+7 (495) 000 52 52</a>
+      </div>
+      <div class="header__call">
+        <a href="#" class="header__call-btn btn btn--white">Заказать звонок</a>
+      </div>
+    </div>
+  </header>
 </body>
 </html>
