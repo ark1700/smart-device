@@ -15,8 +15,8 @@
     <div class="header__wrap">
       <a class="header__logo">
         <picture>
-          <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mobile.webp 1x, img/logo-mobile-2x.webp 2x">
-          <source type="image/webp" srcset="img/logo.webp 1x, img/logo-2x.webp 2x"> -->
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mobile.webp 1x, img/logo-mobile-2x.webp 2x">
+          <source type="image/webp" srcset="img/logo.webp 1x, img/logo-2x.webp 2x">
 
           <source media="(max-width: 767px)" srcset="img/logo-mobile.png 1x, img/logo-mobile-2x.png 2x">
           <img src="img/logo.png" srcset="img/logo-2x.png 2x" alt="Логотип" width="209" height="60">
@@ -52,10 +52,44 @@
           <img src="img/promo-img.png" srcset="img/promo-img-2x.png" alt="Печатные платы" width="713" height="655">
         </picture>
       </div>
-      <a class="promo__scroll">Скролл вниз</a>
+      <a href="#features" class="promo__scroll">Скролл вниз</a>
     </div>
   </header>
-  <section class="features"></section>
+  <section class="features">
+    <div class="features__wrap">
+      <h2 class="visually-hidden" id="features">Приемущества</h2>
+      <ul class="features__list">
+        <li class="features__item">
+          <a href="#" class="features__link">
+            <svg class="features__icon" width="35" height="35"><use xlink:href="#icon-stopwatch"></use></svg>
+            <h3 class="features__header">Оперативные сроки</h3>
+            <p class="features__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          </a>
+        </li>
+        <li class="features__item">
+          <a href="#" class="features__link">
+            <svg class="features__icon" width="35" height="35"><use xlink:href="#icon-hired"></use></svg>
+            <h3 class="features__header">Крупные поставщики</h3>
+            <p class="features__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+          </a>
+        </li>
+        <li class="features__item">
+          <a href="#" class="features__link">
+            <svg class="features__icon" width="35" height="35"><use xlink:href="#icon-detective"></use></svg>
+            <h3 class="features__header">Полная конфиденциальность</h3>
+            <p class="features__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+          </a>
+        </li>
+        <li class="features__item">
+          <a href="#" class="features__link">
+            <svg class="features__icon" width="35" height="35"><use xlink:href="#icon-tag"></use></svg>
+            <h3 class="features__header">Персонализация стоимости</h3>
+            <p class="features__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
   <footer class="footer">
     <div class="footer__wrap">
       <div class="footer__logo-socials">
