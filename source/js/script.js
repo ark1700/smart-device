@@ -1,5 +1,7 @@
 'use strict';
 
+document.createElement('picture');
+
 var footerNavTitle = document.querySelector('.footer__title-nav');
 var footerNav = document.querySelector('.footer__navigation');
 var footerContactsTitle = document.querySelector('.footer__title-contacts');

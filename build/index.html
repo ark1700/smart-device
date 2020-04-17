@@ -53,10 +53,10 @@
     <div class="header__wrap">
       <a class="header__logo">
         <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mobile.webp 1x, img/logo-mobile-2x.webp 2x">
-          <source type="image/webp" srcset="img/logo.webp 1x, img/logo-2x.webp 2x">
+          <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mobile.webp 1x, img/logo-mobile-2x.webp 2x">
+          <source type="image/webp" srcset="img/logo.webp 1x, img/logo-2x.webp 2x"> -->
 
-          <source media="(max-width: 767px)" srcset="img/logo-mobile.jpg 1x, img/logo-mobile-2x.jpg 2x">
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.png 1x, img/logo-mobile-2x.png 2x">
           <img src="img/logo.png" srcset="img/logo-2x.png 2x" alt="Логотип" width="209" height="60">
         </picture>
       </a>
@@ -93,13 +93,16 @@
       <a class="promo__scroll">Скролл вниз</a>
     </div>
   </header>
+  <section class="features"></section>
   <footer class="footer">
     <div class="footer__wrap">
       <div class="footer__logo-socials">
         <a class="footer__logo">
+          <picture>
             <source type="image/webp" srcset="img/logo-footer.webp 1x, img/logo-footer-2x.webp 2x">
 
             <img src="img/logo-footer.png" srcset="img/logo-footer-2x.png 2x" alt="Логотип" width="209" height="60">
+          </picture>
         </a>
         <p class="footer__copy">1999-2018 SD Service Devices</p>
         <ul class="footer__socials">
@@ -167,6 +170,7 @@
       <a href="#" class="footer__studio">Developed by wow studio</a>
     </div>
   </footer>
+  <script src="js/picturefill.min.js" async=""></script>
   <script src="js/script.js"></script>
 </body>
 </html>
