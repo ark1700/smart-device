@@ -1,16 +1,11 @@
-.features__wrap {
-  max-width: 1220px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 112px 25px 55px;
-}
-
 .features__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0;
-  padding-left: 0;
+  max-width: 1220px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 112px 25px 55px;
   list-style: none;
 }
 
@@ -79,7 +74,7 @@
 
 
 @media (max-width: $screen-lg) {
-  .features__wrap {
+  .features__list {
     padding-top: 52px;
     padding-bottom: 30px;
   }
@@ -104,8 +99,8 @@
 }
 
 @media (max-width: $screen-md) {
-  .features__wrap {
-    padding: 38px 15px;
+  .features__list {
+    padding: 38px 15px 38px 13px;
   }
 
   .features__item {

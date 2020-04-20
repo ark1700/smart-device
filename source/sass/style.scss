@@ -3,6 +3,7 @@
 @import "./variables.scss";
 @import "./blocks/btn.scss";
 @import "./blocks/visually-hidden.scss";
+@import "./blocks/header-promo.scss";
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/promo.scss";
@@ -11,7 +12,9 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  // min-height: 100vh;
+  min-height: 4048px; //tablet
+  // min-height: 4867px; //mobile
   min-width: 320px;
   background-color: #ffffff;
   overflow-x: hidden;

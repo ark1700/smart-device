@@ -1,0 +1,32 @@
+.header-promo {
+  background-color: #1b2d37;
+  background-image: url("../../img/promo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/promo-bg-2x.png");
+  }
+}
+
+@media (max-width: $screen-lg) {
+  .header-promo {
+    background-image: url("../../img/promo-bg-tablet.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/promo-bg-tablet-2x.png");
+    }
+  }
+}
+
+
+@media (max-width: $screen-md) {
+  .header-promo {
+    background-image: url("../../img/promo-bg-mobile.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/promo-bg-mobile-2x.png");
+    }
+  }
+}
