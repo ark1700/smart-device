@@ -1,0 +1,197 @@
+.services {
+  background-color: #1b2d37;
+}
+
+.services__wrap {
+  max-width: $container-lg;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 90px 135px 98px;
+}
+
+.services__title {
+  margin-top: 0;
+  margin-bottom: 52px;
+  font-family: $roboto-condensed;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.services__item {
+  margin-bottom: 30px;
+  margin-right: auto;
+  width: 31.6%;
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+.services__link {
+  display: block;
+  position: relative;
+  padding: 50px 44px;
+  height: 620px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: $roboto-condensed;
+  color: inherit;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 63px;
+    height: 63px;
+    background-color: #00b2ff;
+    background-image: url("../../img/icon-Vector.svg");
+    background-repeat: no-repeat;
+    background-size: 6px 9px;
+    background-position: center;
+  }
+}
+
+.services__item--item-1 .services__link {
+  background-image: url("../../img/services-card-1.png");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/services-card-1-2x.png");
+  }
+}
+
+.services__item--item-2 .services__link {
+  background-image: url("../../img/services-card-2.png");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/services-card-2-2x.png");
+  }
+}
+
+.services__item--item-3 .services__link {
+  background-image: url("../../img/services-card-3.png");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/services-card-3-2x.png");
+  }
+}
+
+.services__header {
+  margin: 0;
+  max-width: 170px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+@media (max-width: $screen-lg) {
+  .services__wrap {
+    padding: 50px 25px 78px;
+  }
+
+  .services__title {
+    max-width: 613px;
+    font-size: 32px;
+  }
+
+  .services__list {
+    flex-direction: column;
+  }
+
+  .services__item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 46px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .services__link {
+    height: 256px;
+    padding: 38px 44px;
+  }
+
+  .services__item--item-1 .services__link {
+    background-image: url("../../img/services-card-1-tablet.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/services-card-1-tablet-2x.png");
+    }
+  }
+
+  .services__item--item-2 .services__link {
+    background-image: url("../../img/services-card-2-tablet.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/services-card-2-tablet-2x.png");
+    }
+  }
+
+  .services__item--item-3 .services__link {
+    background-image: url("../../img/services-card-3-tablet.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/services-card-3-tablet-2x.png");
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+  .services__wrap {
+    padding: 50px 15px 65px;
+  }
+
+  .services__title {
+    margin-left: 10px;
+    margin-bottom: 42px;
+    font-size: 28px;
+  }
+
+  .services__item {
+    margin-bottom: 30px;
+  }
+
+  .services__link {
+    padding: 21px 35px;
+  }
+
+  .services__item--item-1 .services__link {
+    background-image: url("../../img/services-card-1-mobile.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/services-card-1-mobile-2x.png");
+    }
+  }
+
+  .services__item--item-2 .services__link {
+    background-image: url("../../img/services-card-2-mobile.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/services-card-2-mobile-2x.png");
+    }
+  }
+
+  .services__item--item-3 .services__link {
+    background-image: url("../../img/services-card-3-mobile.png");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../../img/services-card-3-mobile-2x.png");
+    }
+  }
+}
