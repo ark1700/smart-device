@@ -1,0 +1,25 @@
+.features-about {
+  background-image: url("../../img/features-about-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../../img/features-about-bg-2x.png");
+  }
+}
+
+@media (max-width: $screen-lg) {
+  .features-about {
+    background-image: url("../../img/features-about-bg-tablet.svg");
+    background-size: auto;
+    background-position: right center;
+  }
+}
+
+
+@media (max-width: $screen-md) {
+  .features-about {
+    background-position: left 50% center;
+  }
+}
