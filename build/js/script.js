@@ -29,3 +29,18 @@ footerContactsTitle.addEventListener('click', function () {
     footerContacts.classList.add('footer__contacts--m-hide');
   }
 });
+
+var scrollToBlock = function (e) {
+  e.preventDefault();
+
+  document.querySelector(this.getAttribute('href')).scrollIntoView({
+    behavior: 'smooth'
+  });
+};
+
+if (document.querySelector('.promo__btn')) {
+  document.querySelector('.promo__btn').addEventListener('click', scrollToBlock);
+}
+if (document.querySelector('.promo__scroll')) {
+  document.querySelector('.promo__scroll').addEventListener('click', scrollToBlock);
+}

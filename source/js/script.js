@@ -29,3 +29,15 @@ footerContactsTitle.addEventListener('click', function () {
     footerContacts.classList.add('footer__contacts--m-hide');
   }
 });
+
+var anchorLinks = document.querySelectorAll('a[href^="#*"]');
+
+for (var i = 0; i < anchorLinks.length; i++) {
+  anchorLinks[i].addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+}

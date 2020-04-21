@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <title>Smart device Умные технологии</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
         <div class="promo__content">
           <h2 class="promo__title">Печатные платы</h2>
         <p class="promo__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="#" class="promo__btn btn">
+        <a href="#form" class="promo__btn btn">
           <span class="promo__btn-md">Получить бесплатную консультацию</span>
           <span class="promo__btn-sm">Бесплатная консультация</span>
         </a>
@@ -43,32 +43,24 @@
       <h2 class="visually-hidden" id="features">Приемущества</h2>
       <ul class="features__list">
         <li class="features__item">
-          <a href="#" class="features__link">
-            <svg class="features__icon" width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use></svg>
-            <h3 class="features__header">Оперативные сроки</h3>
-            <p class="features__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
-          </a>
+          <svg class="features__icon" width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use></svg>
+          <h3 class="features__header">Оперативные сроки</h3>
+          <p class="features__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </li>
         <li class="features__item">
-          <a href="#" class="features__link">
-            <svg class="features__icon" width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-hired"></use></svg>
-            <h3 class="features__header">Крупные поставщики</h3>
-            <p class="features__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
-          </a>
+          <svg class="features__icon" width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-hired"></use></svg>
+          <h3 class="features__header">Крупные поставщики</h3>
+          <p class="features__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
         </li>
         <li class="features__item">
-          <a href="#" class="features__link">
-            <svg class="features__icon" width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-detective"></use></svg>
-            <h3 class="features__header">Полная конфиденциальность</h3>
-            <p class="features__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
-          </a>
+          <svg class="features__icon" width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-detective"></use></svg>
+          <h3 class="features__header">Полная конфиденциальность</h3>
+          <p class="features__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
         </li>
         <li class="features__item">
-          <a href="#" class="features__link">
-            <svg class="features__icon" width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-tag"></use></svg>
-            <h3 class="features__header">Персонализация стоимости</h3>
-            <p class="features__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
-          </a>
+          <svg class="features__icon" width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-tag"></use></svg>
+          <h3 class="features__header">Персонализация стоимости</h3>
+          <p class="features__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
         </li>
       </ul>
     </section>
@@ -101,6 +93,20 @@
           </a>
         </li>
       </ul>
+    </div>
+  </section>
+  <section class="form" id="form">
+    <div class="form__wrap">
+      <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
+      <p class="form__descr">Мы проконсультируем Вас бесплатно</p>
+      <form action="POST" class="form__form">
+        <input class="form__text" type="text" name="name" id="name" placeholder="Имя">
+        <input class="form__text form__text--phone" type="tel" name="phone-number" id="phone-number" placeholder="Телефон" maxlength="10">
+        <textarea class="form__textarea" name="question" id="question" placeholder="Ваш вопрос"></textarea>
+        <button type="submit" class="form__btn btn btn--white">Задать вопрос</button>
+        <input type="checkbox" name="personal" id="personal" class="form__checkbox-input visually-hidden" checked>
+        <label for="personal" class="form__checkbox">Я согласен на обработку  персональных данных</label>
+      </form>
     </div>
   </section>
   <footer class="footer">
