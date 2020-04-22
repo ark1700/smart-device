@@ -106,9 +106,10 @@ for (var i = 0; i < inputs.length; i++) {
 }
 
 // masked input
-var formTelInput = document.getElementById("form-tel");
-var modalTelInput = document.getElementById("modal-tel");
-var im = new Inputmask("+7(999)-999-9999");
+var formTelInput = document.getElementById('form-tel');
+var modalTelInput = document.getElementById('modal-tel');
+// eslint-disable-next-line no-undef
+var im = new Inputmask('+7(999)-999-9999');
 
 im.mask(formTelInput);
 im.mask(modalTelInput);
