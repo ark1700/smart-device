@@ -1,13 +1,13 @@
 .promo {
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url("../../img/promo-img.png");
+  background-image: url("../img/promo-img.png");
   background-repeat: no-repeat;
   background-size: 37% auto;
   background-position: 85.2% 0;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../../img/promo-img-2x.png");
+    background-image: url("../img/promo-img-2x.png");
   }
 }
 
@@ -82,12 +82,12 @@
 
 @media (max-width: $screen-lg) {
   .promo {
-    background-image: url("../../img/promo-img-tablet.png");
+    background-image: url("../img/promo-img-tablet.png");
     background-size: 42.7% auto;
     background-position: 100% -80px;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/promo-img-tablet-2x.png");
+      background-image: url("../img/promo-img-tablet-2x.png");
     }
   }
 
@@ -132,12 +132,12 @@
 
 @media (max-width: $screen-md) {
   .promo {
-    background-image: url("../../img/promo-img-mobile.png");
+    background-image: url("../img/promo-img-mobile.png");
     background-size: 300px auto;
     background-position: 100% -71px;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/promo-img-mobile-2x.png");
+      background-image: url("../img/promo-img-mobile-2x.png");
     }
   }
 

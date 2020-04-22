@@ -3,10 +3,10 @@
   background-repeat: no-repeat;
   background-position: 100% 34px;
   background-size: 19% auto;
-  background-image: url("../../img/form-bg.png");
+  background-image: url("../img/form-bg.png");
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../../img/form-bg-2x.png");
+    background-image: url("../img/form-bg-2x.png");
   }
 }
 
@@ -18,10 +18,10 @@
   background-repeat: no-repeat;
   background-position: -5px -61px;
   background-size: 44% auto;
-  background-image: url("../../img/form-img.png");
+  background-image: url("../img/form-img.png");
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../../img/form-img-2x.png");
+    background-image: url("../img/form-img-2x.png");
   }
 }
 
@@ -121,7 +121,7 @@
 }
 
 .form__checkbox-input:checked + .form__checkbox::before {
-  background-image: url("../../img/icon-check.svg");
+  background-image: url("../img/icon-check.svg");
 }
 
 @media (max-width: $screen-lg) {
@@ -192,7 +192,12 @@
   }
 
   .form__descr {
+    padding-left: 1px;
     margin-bottom: 26px;
+  }
+
+  .form__form {
+    padding-left: 1px;
   }
 
   .form__text {
@@ -217,6 +222,7 @@
 
     &::before {
       left: 0;
+      top: 11px;
     }
   }
 }

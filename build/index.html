@@ -44,7 +44,7 @@
       <h2 class="visually-hidden" id="features">Приемущества</h2>
       <ul class="features__list">
         <li class="features__item">
-          <svg class="features__icon" width="35" height="35"><use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use></svg>
+          <svg class="features__icon" width="35" height="35"><use xlink:href="./img/sprite_auto.svg#icon-stopwatch"></use></svg>
           <h3 class="features__header">Оперативные сроки</h3>
           <p class="features__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </li>
@@ -102,7 +102,7 @@
       <p class="form__descr">Мы проконсультируем Вас бесплатно</p>
       <form action="POST" class="form__form">
         <input class="form__text" id="form-name" type="text" name="name" placeholder="Имя">
-        <input class="form__text form__text--phone" type="tel" name="phone-number" placeholder="Телефон" id="form-tel" maxlength="10">
+        <input class="form__text form__text--phone" type="tel" name="phone-number" placeholder="Телефон" id="form-tel">
         <textarea class="form__textarea" id="form-textarea" name="question" placeholder="Ваш вопрос"></textarea>
         <button type="submit" class="form__btn btn btn--white">Задать вопрос</button>
         <input type="checkbox" name="personal" id="personal" class="form__checkbox-input visually-hidden" checked="">
@@ -176,10 +176,12 @@
       </div>
     </div>
     <div class="footer__dev">
-      <p class="footer__rights">Все права защищены</p>
-      <p class="footer__copyright">1999-2018 SD Service Devices</p>
-      <a href="#" class="footer__privacy">Условия конфиденциальности</a>
-      <a href="#" class="footer__studio">Developed by wow studio</a>
+      <div class="footer__dev-wrap">
+        <p class="footer__rights">Все права защищены</p>
+        <p class="footer__copyright">1999-2018 SD Service Devices</p>
+        <a href="#" class="footer__privacy">Условия конфиденциальности</a>
+        <a href="#" class="footer__studio">Developed by wow studio</a>
+      </div>
     </div>
   </footer>
   <section class="modal">
@@ -189,7 +191,7 @@
       <p class="modal__descr">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form action="POST" class="modal__form">
         <input class="modal__text" id="modal-name" type="text" name="name" placeholder="Имя">
-        <input class="modal__text form__text--phone" id="modal-tel" type="tel" name="phone-number" placeholder="Телефон" maxlength="10">
+        <input class="modal__text form__text--phone" id="modal-tel" type="tel" name="phone-number" placeholder="Телефон">
         <textarea class="modal__textarea" id="modal-textarea" name="question" placeholder="Ваш вопрос"></textarea>
         <button type="submit" class="modal__btn btn btn--white">Отправить</button>
         <input type="checkbox" name="personal" id="personal-modal" class="modal__checkbox-input visually-hidden" checked="">
@@ -197,9 +199,7 @@
       </form>
     </div>
   </section>
-  <script src="js/picturefill.min.js" async=""></script>
-  <script src="js/jquery-1.9.0.min.js"></script>
-  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -95,7 +95,6 @@ var inputs = document.querySelectorAll('input[type="text"], input[type="tel"], t
 var inputsChangeHnadler = function () {
   // eslint-disable-next-line no-invalid-this
   localStorage.setItem(this.id, this.value);
-  console.log(this.value);
 };
 
 for (var i = 0; i < inputs.length; i++) {
@@ -106,26 +105,10 @@ for (var i = 0; i < inputs.length; i++) {
   }
 }
 
-// Masked input
-$(function () {
-  $("#form-tel").mask("+7(999)999-9999");
-  $("#modal-tel").mask("+7(999)999-9999");
-});
-// var formTelInput = document.querySelector('#form-tel');
-// formTelInput.addEventListener('focus', function () {
-//   if (formTelInput.value === '') {
-//     formTelInput.value = '+7(';
-//   }
-// });
+// masked input
+var formTelInput = document.getElementById("form-tel");
+var modalTelInput = document.getElementById("modal-tel");
+var im = new Inputmask("+7(999)-999-9999");
 
-// formTelInput.addEventListener('unfocus', function () {
-//   if (formTelInput.value === '+7(') {
-//     formTelInput.value = '';
-//   }
-// });
-
-// formTelInput.addEventListener('input', function () {
-//   if (formTelInput.value.length === 6) {
-
-//   }
-// });
+im.mask(formTelInput);
+im.mask(modalTelInput);

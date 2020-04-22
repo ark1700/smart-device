@@ -59,7 +59,7 @@
     width: 63px;
     height: 63px;
     background-color: #00b2ff;
-    background-image: url("../../img/icon-Vector.svg");
+    background-image: url("../img/icon-Vector.svg");
     background-repeat: no-repeat;
     background-size: 6px 9px;
     background-position: center;
@@ -67,26 +67,26 @@
 }
 
 .services__item--item-1 .services__link {
-  background-image: url("../../img/services-card-1.png");
+  background-image: url("../img/services-card-1.png");
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../../img/services-card-1-2x.png");
+    background-image: url("../img/services-card-1-2x.png");
   }
 }
 
 .services__item--item-2 .services__link {
-  background-image: url("../../img/services-card-2.png");
+  background-image: url("../img/services-card-2.png");
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../../img/services-card-2-2x.png");
+    background-image: url("../img/services-card-2-2x.png");
   }
 }
 
 .services__item--item-3 .services__link {
-  background-image: url("../../img/services-card-3.png");
+  background-image: url("../img/services-card-3.png");
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../../img/services-card-3-2x.png");
+    background-image: url("../img/services-card-3-2x.png");
   }
 }
 
@@ -125,36 +125,40 @@
   .services__link {
     height: 256px;
     padding: 38px 44px;
+
+    &::before {
+      height: 65px;
+    }
   }
 
   .services__item--item-1 .services__link {
-    background-image: url("../../img/services-card-1-tablet.png");
+    background-image: url("../img/services-card-1-tablet.png");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/services-card-1-tablet-2x.png");
+      background-image: url("../img/services-card-1-tablet-2x.png");
     }
   }
 
   .services__item--item-2 .services__link {
-    background-image: url("../../img/services-card-2-tablet.png");
+    background-image: url("../img/services-card-2-tablet.png");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/services-card-2-tablet-2x.png");
+      background-image: url("../img/services-card-2-tablet-2x.png");
     }
   }
 
   .services__item--item-3 .services__link {
-    background-image: url("../../img/services-card-3-tablet.png");
+    background-image: url("../img/services-card-3-tablet.png");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/services-card-3-tablet-2x.png");
+      background-image: url("../img/services-card-3-tablet-2x.png");
     }
   }
 }
 
 @media (max-width: $screen-md) {
   .services__wrap {
-    padding: 50px 15px 65px;
+    padding: 50px 15px 64px;
   }
 
   .services__title {
@@ -172,26 +176,26 @@
   }
 
   .services__item--item-1 .services__link {
-    background-image: url("../../img/services-card-1-mobile.png");
+    background-image: url("../img/services-card-1-mobile.png");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/services-card-1-mobile-2x.png");
+      background-image: url("../img/services-card-1-mobile-2x.png");
     }
   }
 
   .services__item--item-2 .services__link {
-    background-image: url("../../img/services-card-2-mobile.png");
+    background-image: url("../img/services-card-2-mobile.png");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/services-card-2-mobile-2x.png");
+      background-image: url("../img/services-card-2-mobile-2x.png");
     }
   }
 
   .services__item--item-3 .services__link {
-    background-image: url("../../img/services-card-3-mobile.png");
+    background-image: url("../img/services-card-3-mobile.png");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../../img/services-card-3-mobile-2x.png");
+      background-image: url("../img/services-card-3-mobile-2x.png");
     }
   }
 }

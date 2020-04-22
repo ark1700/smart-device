@@ -26,7 +26,7 @@
   padding: 2px 0;
   padding-left: 40px;
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 19px 19px;
   background-position: 0 50%;
   font-family: $pt-mono;
   font-style: normal;
@@ -37,12 +37,12 @@
   text-decoration: none;
 
   &--email {
-    background-image: url("../../img/icon-email.svg");
-    background-size: 20px 14px;
+    background-image: url("../img/icon-email.svg");
+    background-size: 19px 14px;
   }
 
   &--phone {
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     background-position: 5px 50%;
   }
 }
