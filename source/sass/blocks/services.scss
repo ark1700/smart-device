@@ -44,6 +44,7 @@
   height: 620px;
   box-sizing: border-box;
   overflow: hidden;
+  background-color: #2d3b43;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -132,7 +133,8 @@
   }
 
   .services__link {
-    height: 256px;
+    height: auto;
+    min-height: 256px;
     padding: 38px 44px;
 
     &::before {

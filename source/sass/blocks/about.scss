@@ -6,7 +6,7 @@
 
   background-image: url("../img/about-img.png");
   background-repeat: no-repeat;
-  background-size: 214px auto;
+  background-size: 144px auto;
   background-position: 112px 53px;
 
   @media (min-resolution: $retina-dppx) {
@@ -36,21 +36,37 @@
   }
 }
 
+.about__span--md {
+  display: none;
+}
+
 .about__btn {
-  padding: 12px 49px 10px;
+  padding: 12px 50px 10px;
 }
 
 @media (max-width: $screen-lg) {
   .about {
-    padding: 25px 31px 81px 212px;
-    background-size: 242px auto;
-    background-position: 2px 25px;
+    padding: 25px 30px 81px 212px;
+    background-size: 164px auto;
+    background-position: 0 25px;
   }
 
   .about__title {
     margin-bottom: 26px;
     font-size: 32px;
     line-height: 1.4;
+  }
+
+  .about__content {
+    margin-bottom: 42px;
+  }
+
+  .about__span--md {
+    display: inline;
+  }
+
+  .about__span--lg {
+    display: none;
   }
 }
 

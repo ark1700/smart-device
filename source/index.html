@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +24,7 @@
       <a href="tel:+74950005252" class="header__contact header__contact--phone">+7 (495) 000 52 52</a>
       <a href="#" class="header__call-btn btn btn--white">Заказать звонок</a>
     </header>
+    <h1 class="visually-hidden">Smart device Умные технологии</h1>
     <section class="promo">
       <div class="promo__wrap">
         <div class="promo__content">
@@ -69,7 +70,7 @@
       <h2 class="about__title">О компании</h2>
       <div class="about__content">
         <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__span about__span--md">..</span> <span class="about__span about__span--lg">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
       </div>
       <a href="#" class="about__btn btn btn--blue">Подробнее</a>
     </section>
@@ -101,11 +102,11 @@
       <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
       <p class="form__descr">Мы проконсультируем Вас бесплатно</p>
       <form action="POST" class="form__form">
-        <input class="form__text" id="form-name" type="text" name="name" placeholder="Имя">
-        <input class="form__text form__text--phone" type="tel" name="phone-number" placeholder="Телефон" id="form-tel">
-        <textarea class="form__textarea" id="form-textarea" name="question" placeholder="Ваш вопрос"></textarea>
+        <input class="form__text" id="form-name" type="text" name="name" placeholder="Имя" required>
+        <input class="form__text form__text--phone" type="tel" name="phone-number" placeholder="Телефон" id="form-tel" required>
+        <textarea class="form__textarea" id="form-textarea" name="question" placeholder="Ваш вопрос" required></textarea>
         <button type="submit" class="form__btn btn btn--white">Задать вопрос</button>
-        <input type="checkbox" name="personal" id="personal" class="form__checkbox-input visually-hidden" checked>
+        <input type="checkbox" name="personal" id="personal" class="form__checkbox-input visually-hidden" checked required>
         <label for="personal" class="form__checkbox">Я согласен на обработку  персональных данных</label>
       </form>
     </div>
@@ -190,11 +191,11 @@
       <a href="#" class="modal__close">Закрыть</a>
       <p class="modal__descr">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form action="POST" class="modal__form">
-        <input class="modal__text" id="modal-name" type="text" name="name" placeholder="Имя">
-        <input class="modal__text form__text--phone" id="modal-tel" type="tel" name="phone-number" placeholder="Телефон">
-        <textarea class="modal__textarea" id="modal-textarea" name="question" placeholder="Ваш вопрос"></textarea>
+        <input class="modal__text" id="modal-name" type="text" name="name" placeholder="Имя" required>
+        <input class="modal__text modal__text--phone" id="modal-tel" type="tel" name="phone-number" placeholder="Телефон" required>
+        <textarea class="modal__textarea" id="modal-textarea" name="question" placeholder="Ваш вопрос" required></textarea>
         <button type="submit" class="modal__btn btn btn--white">Отправить</button>
-        <input type="checkbox" name="personal" id="personal-modal" class="modal__checkbox-input visually-hidden" checked>
+        <input type="checkbox" name="personal" id="personal-modal" class="modal__checkbox-input visually-hidden" checked required>
         <label for="personal-modal" class="modal__checkbox">Я согласен на обработку  персональных данных</label>
       </form>
     </div>
