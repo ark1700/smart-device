@@ -33,7 +33,7 @@ footerContactsTitle.addEventListener('click', function () {
 });
 
 // Плавный скролл
-var scrollToBlock = function (e) {
+var doScrollToBlock = function (e) {
   e.preventDefault();
 
   // eslint-disable-next-line no-invalid-this
@@ -43,10 +43,10 @@ var scrollToBlock = function (e) {
 };
 
 if (document.querySelector('.promo__btn')) {
-  document.querySelector('.promo__btn').addEventListener('click', scrollToBlock);
+  document.querySelector('.promo__btn').addEventListener('click', doScrollToBlock);
 }
 if (document.querySelector('.promo__scroll')) {
-  document.querySelector('.promo__scroll').addEventListener('click', scrollToBlock);
+  document.querySelector('.promo__scroll').addEventListener('click', doScrollToBlock);
 }
 
 // Модальное окно
@@ -54,12 +54,14 @@ var modalBtn = document.querySelector('.header__call-btn');
 var modalBlock = document.querySelector('.modal');
 var modalClose = document.querySelector('.modal__close');
 var modalFirstInput = document.querySelector('.modal__text');
+var htmlBody = document.querySelector('body');
 
 if (modalBtn) {
   modalBtn.addEventListener('click', function (e) {
     e.preventDefault();
     if (modalBlock) {
       modalBlock.classList.add('modal--show');
+      htmlBody.classList.add('scroll-hidden');
       modalFirstInput.focus();
     }
   });
@@ -71,6 +73,7 @@ if (modalBlock) {
       if (modalBlock.classList.contains('modal--show')) {
         e.preventDefault();
         modalBlock.classList.remove('modal--show');
+        htmlBody.classList.remove('scroll-hidden');
       }
     });
   }
@@ -78,6 +81,7 @@ if (modalBlock) {
   modalBlock.addEventListener('click', function (e) {
     if (e.target === modalBlock) {
       modalBlock.classList.remove('modal--show');
+      htmlBody.classList.remove('scroll-hidden');
     }
   });
 }
@@ -86,19 +90,20 @@ document.addEventListener('keydown', function (e) {
   if (modalBlock) {
     if (modalBlock.classList.contains('modal--show') && (e.key === 'Esc' || e.code === 'Escape')) {
       modalBlock.classList.remove('modal--show');
+      htmlBody.classList.remove('scroll-hidden');
     }
   }
 });
 
 // Хранение input в localStorage
 var inputs = document.querySelectorAll('input[type="text"], input[type="tel"], textarea');
-var inputsChangeHnadler = function () {
+var inputsChangeHandler = function () {
   // eslint-disable-next-line no-invalid-this
   localStorage.setItem(this.id, this.value);
 };
 
 for (var i = 0; i < inputs.length; i++) {
-  inputs[i].addEventListener('change', inputsChangeHnadler);
+  inputs[i].addEventListener('change', inputsChangeHandler);
 
   if (localStorage.getItem(inputs[i].id)) {
     inputs[i].value = localStorage.getItem(inputs[i].id);
@@ -108,6 +113,7 @@ for (var i = 0; i < inputs.length; i++) {
 // masked input
 var formTelInput = document.getElementById('form-tel');
 var modalTelInput = document.getElementById('modal-tel');
+
 // eslint-disable-next-line no-undef
 var im = new Inputmask('+7(999)-999-9999');
 
