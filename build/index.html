@@ -11,6 +11,7 @@
   <div class="header-promo">
     <header class="header">
       <a class="header__logo">
+        <!-- 1х: 209px; 2x: 417px -->
         <picture>
           <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mobile.webp 1x, img/logo-mobile-2x.webp 2x">
           <source type="image/webp" srcset="img/logo.webp 1x, img/logo-2x.webp 2x">
@@ -100,9 +101,9 @@
       <h2 class="form__title">Остались вопросы? Задайте их нам!</h2>
       <p class="form__descr">Мы проконсультируем Вас бесплатно</p>
       <form action="POST" class="form__form">
-        <input class="form__text" type="text" name="name" id="name" placeholder="Имя">
-        <input class="form__text form__text--phone" type="tel" name="phone-number" id="phone-number" placeholder="Телефон" maxlength="10">
-        <textarea class="form__textarea" name="question" id="question" placeholder="Ваш вопрос"></textarea>
+        <input class="form__text" id="form-name" type="text" name="name" placeholder="Имя">
+        <input class="form__text form__text--phone" type="tel" name="phone-number" placeholder="Телефон" id="form-tel" maxlength="10">
+        <textarea class="form__textarea" id="form-textarea" name="question" placeholder="Ваш вопрос"></textarea>
         <button type="submit" class="form__btn btn btn--white">Задать вопрос</button>
         <input type="checkbox" name="personal" id="personal" class="form__checkbox-input visually-hidden" checked="">
         <label for="personal" class="form__checkbox">Я согласен на обработку  персональных данных</label>
@@ -113,13 +114,13 @@
     <div class="footer__wrap">
       <div class="footer__logo-socials">
         <a class="footer__logo">
+          <!-- 1х: 215px; 2x: 430px -->
           <picture>
             <source type="image/webp" srcset="img/logo-footer.webp 1x, img/logo-footer-2x.webp 2x">
 
             <img src="img/logo-footer.png" srcset="img/logo-footer-2x.png 2x" alt="Логотип" width="209" height="60">
           </picture>
         </a>
-        <!-- <p class="footer__copy">1999-2018 SD Service Devices</p> -->
         <ul class="footer__socials">
           <li class="footer__socials-item">
             <a href="#" class="footer__socials-link">
@@ -181,7 +182,24 @@
       <a href="#" class="footer__studio">Developed by wow studio</a>
     </div>
   </footer>
+  <section class="modal">
+    <div class="modal__wrap">
+      <h2 class="modal__title">Закажите звонок</h2>
+      <a href="#" class="modal__close">Закрыть</a>
+      <p class="modal__descr">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form action="POST" class="modal__form">
+        <input class="modal__text" id="modal-name" type="text" name="name" placeholder="Имя">
+        <input class="modal__text form__text--phone" id="modal-tel" type="tel" name="phone-number" placeholder="Телефон" maxlength="10">
+        <textarea class="modal__textarea" id="modal-textarea" name="question" placeholder="Ваш вопрос"></textarea>
+        <button type="submit" class="modal__btn btn btn--white">Отправить</button>
+        <input type="checkbox" name="personal" id="personal-modal" class="modal__checkbox-input visually-hidden" checked="">
+        <label for="personal-modal" class="modal__checkbox">Я согласен на обработку  персональных данных</label>
+      </form>
+    </div>
+  </section>
   <script src="js/picturefill.min.js" async=""></script>
+  <script src="js/jquery-1.9.0.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

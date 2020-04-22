@@ -26,7 +26,7 @@
 }
 
 .form__title {
-  width: 55%;
+  width: 60%;
   max-width: 570px;
   margin-top: 0;
   margin-right: 5px;
@@ -40,7 +40,7 @@
 }
 
 .form__descr {
-  width: 55%;
+  width: 60%;
   max-width: 570px;
   margin-top: 0;
   margin-bottom: 50px;
@@ -51,7 +51,7 @@
 .form__form {
   display: flex;
   flex-wrap: wrap;
-  width: 55%;
+  width: 60%;
   max-width: 570px;
   margin-left: auto;
 }
@@ -95,6 +95,7 @@
 }
 
 .form__checkbox {
+  display: block;
   width: 47.4%;
   padding-left: 40px;
   padding-top: 7px;

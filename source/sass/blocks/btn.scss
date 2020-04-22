@@ -24,4 +24,13 @@
     border: 1px solid #00b2ff;
     color: #00b2ff;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
