@@ -36,8 +36,7 @@ footerContactsTitle.addEventListener('click', function () {
 var doScrollToBlock = function (e) {
   e.preventDefault();
 
-  // eslint-disable-next-line no-invalid-this
-  document.querySelector(this.getAttribute('href')).scrollIntoView({
+  document.querySelector(e.currentTarget.getAttribute('href')).scrollIntoView({
     behavior: 'smooth'
   });
 };
@@ -97,9 +96,8 @@ document.addEventListener('keydown', function (e) {
 
 // Хранение input в localStorage
 var inputs = document.querySelectorAll('input[type="text"], input[type="tel"], textarea');
-var inputsChangeHandler = function () {
-  // eslint-disable-next-line no-invalid-this
-  localStorage.setItem(this.id, this.value);
+var inputsChangeHandler = function (e) {
+  localStorage.setItem(e.currentTarget.id, e.currentTarget.value);
 };
 
 for (var i = 0; i < inputs.length; i++) {
