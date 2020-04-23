@@ -56,6 +56,7 @@
     "del": "^4.1.1",
     "inputmask": "^5.0.3",
     "picturefill": "^3.0.3",
+    "smoothscroll-polyfill": "^0.4.4",
     "svgxuse": "^1.2.6"
   }
 }
