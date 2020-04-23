@@ -32,7 +32,7 @@
   margin-right: auto;
   width: 31.6%;
 
-  &:nth-child(3) {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 }
@@ -103,6 +103,7 @@
 .services__header {
   margin: 0;
   max-width: 170px;
+  font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;

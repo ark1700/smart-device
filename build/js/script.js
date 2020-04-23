@@ -37,7 +37,7 @@ var doScrollToBlock = function (e) {
   e.preventDefault();
 
   document.querySelector(e.currentTarget.getAttribute('href')).scrollIntoView({
-    behavior: 'smooth'
+    behavior: 'auto'
   });
 };
 
