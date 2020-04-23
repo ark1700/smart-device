@@ -106,7 +106,7 @@
         <label for="form-name" class="visually-hidden">Имя</label>
         <input class="form__text" id="form-name" type="text" name="name" placeholder="Имя" required="">
         <label for="form-tel" class="visually-hidden">Телефон</label>
-        <input class="form__text form__text--phone" type="tel" name="phone-number" placeholder="Телефон" id="form-tel" required="">
+        <input class="form__text form__text--phone" type="tel" name="phone-number" placeholder="Телефон" id="form-tel" required="" pattern="\+7\([0-9]{3}\)-[0-9]{3}-[0-9]{4}">
         <label for="form-textarea" class="visually-hidden">Ваш вопрос</label>
         <textarea class="form__textarea" id="form-textarea" name="question" placeholder="Ваш вопрос" required=""></textarea>
         <button type="submit" class="form__btn btn btn--white">Задать вопрос</button>
@@ -198,7 +198,7 @@
         <label for="modal-name" class="visually-hidden">Имя</label>
         <input class="modal__text" id="modal-name" type="text" name="name" placeholder="Имя" required="">
         <label for="modal-tel" class="visually-hidden">Телефон</label>
-        <input class="modal__text modal__text--phone" id="modal-tel" type="tel" name="phone-number" placeholder="Телефон" required="">
+        <input class="modal__text modal__text--phone" id="modal-tel" type="tel" name="phone-number" placeholder="Телефон" required="" pattern="\+7\([0-9]{3}\)-[0-9]{3}-[0-9]{4}">
         <label for="modal-textarea" class="visually-hidden">Ваш вопрос</label>
         <textarea class="modal__textarea" id="modal-textarea" name="question" placeholder="Ваш вопрос" required=""></textarea>
         <button type="submit" class="modal__btn btn btn--white">Отправить</button>
